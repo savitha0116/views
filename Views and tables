@@ -1,0 +1,31 @@
+| Feature          | Table            | View                      |
+| ---------------- | ---------------- | ------------------------- |
+| Data Storage     | Physical storage | No physical storage       |
+| Type             | Physical object  | Virtual object            |
+| Data Persistence | Permanent        | Depends on base tables    |
+| Space Usage      | Uses disk space  | Minimal                   |
+| DML Operations   | Fully supported  | Limited                   |
+| Performance      | Faster           | Slightly slower           |
+| Dependency       | Independent      | Depends on tables         |
+| Security         | No filtering     | Can restrict rows/columns |
+
+
+Table 
+  A table is a database object that physically stores data.
+Characteristics
+  Stores actual data on disk
+  Data is persistent
+  Supports INSERT, UPDATE, DELETE
+  Requires storage space
+  Independent object
+
+View 
+  A view is a virtual table created using a SQL query.
+  It does not store data (except materialized/indexed views in some DBMS).
+
+Characteristics
+  Stores only the SQL query
+  Data is retrieved dynamically from base tables
+  Used for security, abstraction, and simplicity
+  Usually limited DML operations
+  Depends on underlying tables
