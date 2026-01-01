@@ -1,0 +1,16 @@
+Show databases;
+Use practices;
+Show tables;
+
+CREATE TABLE students (
+  student_id INT PRIMARY KEY,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(100),
+  phone_number VARCHAR(20),
+  address TEXT,
+  date_of_birth DATE,
+  gender VARCHAR(10),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
